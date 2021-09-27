@@ -11,7 +11,9 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 const router: Routes = [
 
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
   { path: '**', component: NopagefoundComponent }
+
 
 ]
 @NgModule({
